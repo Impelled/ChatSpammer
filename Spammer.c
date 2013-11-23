@@ -10,13 +10,11 @@ int main( void )
     INPUT KeyboardInput;
     INPUT EnterKeyboardInput;
 
-    //Print start message
     printf("Starting Impelled's Spammer ... ");
 
     //Pause for five seconds
     Sleep(5000);
 
-    //Print start completion message
     printf("Done\n");
 
     //Set up the generic keyboard event
@@ -35,7 +33,6 @@ int main( void )
     EnterKeyboardInput.ki.wVk = 0x0D;
     EnterKeyboardInput.ki.dwFlags = 0;
 
-    //Print spamming message
     printf("Spamming...\n");
 
     //Start the spamming
@@ -46,6 +43,5 @@ int main( void )
         Sleep(SPAM_INTERVAL);
     }
 
-    //Exit the program successfully
     return 0;
 }
